@@ -327,7 +327,12 @@ li.creativity .piesite > #slice > .pie {
   box-sizing: border-box;
 }
 body {
-  background: #14213d;
+  background: linear-gradient(
+    to bottom,
+    #14213d 40%,
+    #007dbb 70%,
+    #8bc7ff 100%
+  );
   font-family: "Varela Round", sans-serif;
   color: #ddd;
   margin: 20px;
@@ -335,16 +340,39 @@ body {
 h1,
 h2,
 h3 {
-  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 h1 {
-  color: #f0b015;
+  font-size: 5em;
 }
 h2 {
-  margin: 20px auto 0;
-  font-size: 1.2em;
+  font-size: 2em;
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+}
+h2 .accent {
+  color: rgb(238, 17, 120);
 }
 p {
   line-height: 2em;
-  max-width: 60em;
+}
+
+p.cond {
+  line-height: 1.5em;
+  font-size: 0.8em;
+  max-width: 200px;
+}
+
+.title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 20px;
+}
+.review {
+  margin-left: 250px;
 }
