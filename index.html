@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>FSDN Review 2021</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,8 +14,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./stars.css" />
   </head>
   <body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
     <div class="title">
       <h1>FSDN</h1>
       <h2>Review <span class="accent">2021</span></h2>
@@ -26,101 +27,133 @@
         Bacon ipsum do lor amet porchetta jowl jerky short loin, tri-tip flank c
         ow. Strip steak meat ball picanha t-bone pork loin filet mignon,
         pancetta jerky kielba sa sirloin ball t ip hamburger turkey pork belly
-        ham hock. Chicken swine tail s pa re ribs,pork loin tongue picanha strip
-        steak ribeye pancetta bresaola landjaeger flank ham shank. Picanha
-        t-bone meatball, corned beef tail tri-tip flank capicola alcatra spare
-        ribs. Flank tail pork loin pork belly sirloin tri-tip.
+        ham hock.
       </p>
     </div>
     <div class="review">
-      <div class="chartBarsWrap">
-        <div class="chartBars chartBars1">
-          <ul class="numbers">
-            <li><span>100%</span></li>
-            <li><span>80%</span></li>
-            <li><span>60%</span></li>
-            <li><span>40%</span></li>
-            <li><span>20%</span></li>
-            <li><span>0%</span></li>
-          </ul>
-          <ul class="bars">
-            <li>
-              <span class="tooltip">
-                <span class="tooltipContent"
-                  >Very important info that you should read!</span
-                >
-                <div data-percentage="52" class="bar greenBar trigger"></div>
-              </span>
-              <b>Alpha</b>
-            </li>
-            <li>
-              <span class="tooltip">
-                <span class="tooltipContent">This one is trending well.</span>
-                <div data-percentage="83" class="bar blueBar trigger"></div>
-              </span>
-              <b>Beta</b>
-            </li>
-            <li>
-              <span class="tooltip">
-                <span class="tooltipContent">I like cheese!</span>
-                <div data-percentage="94" class="bar orangeBar trigger"></div>
-              </span>
-              <b>Gamma</b>
-            </li>
-            <li>
-              <span class="tooltip">
-                <span class="tooltipContent">Monkey's are funny!</span>
-                <div data-percentage="64" class="bar purpleBar trigger"></div>
-              </span>
-              <b>Delta</b>
-            </li>
-          </ul>
+      <div class="flex-container-two-cols">
+        <div>
+          <p class="intro">
+            In 2021 TEC launched a set of enabling services to support Country
+            Office solution development in accordance with minimum safety and
+            security standards.
+          </p>
+        </div>
+        <div>
+          <p class="text">
+            WFP's operational context is evolving and we’re seeing more demand
+            than ever for digital needs. We need to be more agile, responsive
+            and effective while being wholly committed to safeguarding our staff
+            and beneficiaries from cyberattacks, which are on the rise during
+            COVID-19. To enable this evolution, TEC is offering a set of
+            enabling services to support Country Office solution development in
+            accordance with minimum safety and security standards. The objective
+            is to enable better, safer solution development in WFP Country
+            Offices.
+          </p>
         </div>
       </div>
 
+      <div>
+        <h3>Geographical Distribution</h3>
+        <p>
+          In this first year of FSDN, the Digital Transformation Unit has
+          supported
+          <strong>74</strong> applications. The bureau that got the biggest
+          number of reviewed applications has been <strong>Cairo</strong> with
+          <strong>55</strong> solutions, followed by <strong>Dakar (7)</strong>,
+          <strong>Bangkok (6)</strong> and <strong>Johannesbourg (4)</strong>.
+          <strong>Nairobi</strong> and <strong>Panama</strong> close with one
+          solution reviewed each.
+        </p>
+        <div class="flex-container-two-cols">
+          <div>
+            <div class="chartBars chartBars2">
+              <ul class="bars">
+                <li>
+                  <div data-percentage="92" class="bar greenBar trigger"></div>
+                  <b>RBB</b>
+                </li>
+                <li>
+                  <div data-percentage="33" class="bar orangeBar trigger"></div>
+                  <b>RBC</b>
+                </li>
+                <li>
+                  <div data-percentage="64" class="bar blueBar trigger"></div>
+                  <b>RBD</b>
+                </li>
+                <li>
+                  <div data-percentage="44" class="bar purpleBar trigger"></div>
+                  <b>RBJ</b>
+                </li>
+                <li>
+                  <div data-percentage="44" class="bar purpleBar trigger"></div>
+                  <b>RBN</b>
+                </li>
+                <li>
+                  <div data-percentage="44" class="bar purpleBar trigger"></div>
+                  <b>RBP</b>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <div>
+          <div class="chartBarsWrap chartBarsHorizontal">
+            <div class="chartBars">
+              <ul class="bars">
+                <li>
+                  <div data-percentage="92" class="bar greenBar"></div>
+                  <b>Alpha</b>
+                </li>
+                <li>
+                  <div data-percentage="33" class="bar orangeBar"></div>
+                  <b>Beta</b>
+                </li>
+                <li>
+                  <div data-percentage="64" class="bar blueBar"></div>
+                  <b>Gamma</b>
+                </li>
+                <li>
+                  <div data-percentage="44" class="bar purpleBar"></div>
+                  <b>Delta</b>
+                </li>
+                <li>
+                  <div data-percentage="33" class="bar orangeBar"></div>
+                  <b>Beta</b>
+                </li>
+                <li>
+                  <div data-percentage="64" class="bar blueBar"></div>
+                  <b>Gamma</b>
+                </li>
+                <li>
+                  <div data-percentage="44" class="bar purpleBar"></div>
+                  <b>Delta</b>
+                </li>
+                <li>
+                  <div data-percentage="44" class="bar purpleBar"></div>
+                  <b>Delta</b>
+                </li>
+                <li>
+                  <div data-percentage="44" class="bar purpleBar"></div>
+                  <b>Delta</b>
+                </li>
+                <li>
+                  <div data-percentage="44" class="bar purpleBar"></div>
+                  <b>Delta</b>
+                </li>
+              </ul>
+            </div>
+            </div>
+        </div>
+      </div>
       <p>
         Bacon ipsum do lor amet porchetta jowl jerky short loin, tri-tip flank c
         ow. Strip steak meat ball picanha t-bone pork loin filet mignon,
         pancetta jerky kielba sa sirloin ball t ip hamburger turkey pork belly
-        ham hock. Chicken swine tail s pa re ribs,pork loin tongue picanha strip
-        steak ribeye pancetta bresaola landjaeger flank ham shank. Picanha
-        t-bone meatball, corned beef tail tri-tip flank capicola alcatra spare
-        ribs. Flank tail pork loin pork belly sirloin tri-tip.
+        ham hock.
       </p>
 
-      <h3>Responsive? Yep.</h3>
-
-      <div class="chartBarsWrap">
-        <div class="chartBars chartBars2">
-          <ul class="numbers">
-            <li><span>100%</span></li>
-            <li><span>80%</span></li>
-            <li><span>60%</span></li>
-            <li><span>40%</span></li>
-            <li><span>20%</span></li>
-            <li><span>0%</span></li>
-          </ul>
-          <ul class="bars">
-            <li>
-              <div data-percentage="92" class="bar greenBar trigger"></div>
-              <b>Alpha</b>
-            </li>
-            <li>
-              <div data-percentage="33" class="bar orangeBar trigger"></div>
-              <b>Beta</b>
-            </li>
-            <li>
-              <div data-percentage="64" class="bar blueBar trigger"></div>
-              <b>Gamma</b>
-            </li>
-            <li>
-              <div data-percentage="44" class="bar purpleBar trigger"></div>
-              <b>Delta</b>
-            </li>
-          </ul>
-        </div>
-      </div>
-
+      <h3>Radial Graphs</h3>
       <p>
         Bacon ipsum do lor amet porchetta jowl jerky short loin, tri-tip flank c
         ow. Strip steak meat ball picanha t-bone pork loin filet mignon,
@@ -130,9 +163,6 @@
         t-bone meatball, corned beef tail tri-tip flank capicola alcatra spare
         ribs. Flank tail pork loin pork belly sirloin tri-tip. Bresaola salmi.
       </p>
-
-      <h3>Radial Graphs</h3>
-
       <div class="box-piesite">
         <ul>
           <li class="design">
@@ -164,19 +194,19 @@
         <div class="chartBars">
           <ul class="bars">
             <li>
-              <div data-percentage="92" class="bar greenBarFlat"></div>
+              <div data-percentage="92" class="bar greenBar"></div>
               <b>Alpha</b>
             </li>
             <li>
-              <div data-percentage="33" class="bar orangeBarFlat"></div>
+              <div data-percentage="33" class="bar orangeBar"></div>
               <b>Beta</b>
             </li>
             <li>
-              <div data-percentage="64" class="bar blueBarFlat"></div>
+              <div data-percentage="64" class="bar blueBar"></div>
               <b>Gamma</b>
             </li>
             <li>
-              <div data-percentage="44" class="bar purpleBarFlat"></div>
+              <div data-percentage="44" class="bar purpleBar"></div>
               <b>Delta</b>
             </li>
           </ul>
@@ -192,61 +222,6 @@
       </p>
 
       <h3>Just add more bars, they sqeeze in. Sweet!</h3>
-
-      <div class="chartBarsWrap">
-        <div class="chartBars chartBars3">
-          <ul class="numbers">
-            <li><span>100%</span></li>
-            <li><span>80%</span></li>
-            <li><span>60%</span></li>
-            <li><span>40%</span></li>
-            <li><span>20%</span></li>
-            <li><span>0%</span></li>
-          </ul>
-          <ul class="bars">
-            <li>
-              <div data-percentage="92" class="bar greenBar trigger"></div>
-              <b>Alpha</b>
-            </li>
-            <li>
-              <div data-percentage="33" class="bar blueBar trigger"></div>
-              <b>Beta</b>
-            </li>
-            <li>
-              <div data-percentage="64" class="bar orangeBar trigger"></div>
-              <b>Gamma</b>
-            </li>
-            <li>
-              <div data-percentage="41" class="bar purpleBar trigger"></div>
-              <b>Delta</b>
-            </li>
-            <li>
-              <div data-percentage="52" class="bar greenBar trigger"></div>
-              <b>Epsilon</b>
-            </li>
-            <li>
-              <div data-percentage="58" class="bar blueBar trigger"></div>
-              <b>Zeta</b>
-            </li>
-            <li>
-              <div data-percentage="65" class="bar orangeBar trigger"></div>
-              <b>Eta</b>
-            </li>
-            <li>
-              <div data-percentage="91" class="bar purpleBar trigger"></div>
-              <b>Theta</b>
-            </li>
-            <li>
-              <div data-percentage="32" class="bar greenBar trigger"></div>
-              <b>Iota</b>
-            </li>
-            <li>
-              <div data-percentage="68" class="bar blueBar trigger"></div>
-              <b>Kappa</b>
-            </li>
-          </ul>
-        </div>
-      </div>
 
       <p>
         Bacon ipsum do lor amet porchetta jowl jerky short loin, tri-tip flank c

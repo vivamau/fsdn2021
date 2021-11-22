@@ -7,13 +7,12 @@
   position: relative;
   max-width: 600px;
   height: 300px;
-  margin: 50px auto 100px;
+  margin: 50px auto 50px;
 }
 .chartBars .bars {
   display: flex;
   justify-content: space-around;
-  border-left: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
+
   width: 100%;
   height: 100%;
   padding: 0;
@@ -94,7 +93,7 @@
   border-top-right-radius: 30px;
 }
 .chartBars2 {
-  max-width: 350px;
+  max-width: 400px;
 }
 .chartBars2 .bars {
   padding: 0;
@@ -131,28 +130,30 @@
   width: 100%;
   position: absolute;
   bottom: initial;
-  top: 1em;
+  top: 7px;
   left: -102%;
   text-align: right;
 }
 .chartBarsWrap.chartBarsHorizontal .chartBars {
-  height: 200px;
+  height: 300px;
 }
+
 .chartBarsWrap.chartBarsHorizontal .chartBars .bars {
   border: 0;
 }
 .chartBarsWrap.chartBarsHorizontal .chartBars .bars .bar {
   width: 0;
-  padding-top: 10px;
-  height: 100% !important;
+  padding-top: 3px;
+  height: 85% !important;
   text-align: right;
-  font-size: 1.5em;
+  font-size: 1.2em;
   transition: 2s width cubic-bezier(0.6, 0.4, 0.4, 1.1);
 }
 .chartBarsWrap.chartBarsHorizontal .chartBars .bars .bar:after {
   font-size: 0.6em !important;
   margin-right: 20px;
 }
+
 .bars li .bar.greenBar {
   background-color: #6b8e23;
   background: radial-gradient(#99cb32, #6b8e23);
@@ -189,7 +190,7 @@
   position: relative;
   width: 1em;
   height: 1em;
-  font-size: 10em;
+  font-size: 9em;
   cursor: default;
 }
 .piesite .percent {
@@ -326,14 +327,18 @@ li.creativity .piesite > #slice > .pie {
 * {
   box-sizing: border-box;
 }
+
 body {
+  max-width: 1024px;
+  margin: 0 auto;
   background: linear-gradient(
     to bottom,
     #14213d 40%,
-    #007dbb 70%,
-    #8bc7ff 100%
+    #007dbb 60%,
+    #14213d 100%
   );
-  font-family: "Varela Round", sans-serif;
+  font-family: "Dosis", sans-serif;
+  font-size: 1em;
   color: #ddd;
   margin: 20px;
 }
@@ -341,6 +346,7 @@ h1,
 h2,
 h3 {
   font-family: "Space Grotesk", sans-serif;
+
   margin: 0;
   padding: 0;
 }
@@ -357,14 +363,29 @@ h2 {
 h2 .accent {
   color: rgb(238, 17, 120);
 }
+h3 {
+  color: rgb(238, 17, 120);
+  font-size: 1.6em;
+}
 p {
   line-height: 2em;
 }
 
 p.cond {
   line-height: 1.5em;
-  font-size: 0.8em;
+  font-size: 1em;
   max-width: 200px;
+}
+
+p.intro {
+  font-weight: 200;
+  font-size: 2.1em;
+  line-height: 1.3em;
+  padding: 0 30px 0 0;
+}
+
+p.text {
+  padding-top: 20px;
 }
 
 .title {
@@ -375,4 +396,14 @@ p.cond {
 }
 .review {
   margin-left: 250px;
+}
+.flex-container-two-cols {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container-two-cols > div {
+  width: 49%;
+  margin: 1%;
 }
