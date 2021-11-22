@@ -367,6 +367,9 @@ h3 {
   color: rgb(238, 17, 120);
   font-size: 1.6em;
 }
+strong {
+  color: rgb(238, 17, 120);
+}
 p {
   line-height: 2em;
 }
