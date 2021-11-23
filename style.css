@@ -368,11 +368,11 @@ h1 {
 }
 h2 {
   font-size: 2em;
-  text-align: center;
   margin-top: -15px;
   margin-bottom: 20px;
   letter-spacing: 0.2px;
 }
+
 h2 .accent {
   color: rgb(238, 17, 120);
 }
@@ -413,16 +413,36 @@ p.text {
   left: 0;
   margin: 20px;
 }
+@media (max-width: 800px) {
+  .title {
+    position: relative;
+  }
+}
 .review {
   margin-left: 250px;
+}
+@media (max-width: 800px) {
+  .review {
+    margin: auto;
+  }
 }
 .flex-container-two-cols {
   margin-top: -40px;
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 800px) {
+  .flex-container-two-cols {
+    flex-direction: column;
+  }
+}
 
 .flex-container-two-cols > div {
   width: 50%;
   margin: 1%;
+}
+@media (max-width: 800px) {
+  .flex-container-two-cols > div {
+    width: 100%;
+  }
 }
