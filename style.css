@@ -407,7 +407,7 @@ p.intro {
   line-height: 1.3em;
   padding: 0 30px 0 0;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (max-width: 800px) {
   p.intro {
     padding: 0;
   }
@@ -423,15 +423,16 @@ p.text {
   left: 0;
   margin: 20px;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (max-width: 800px) {
   .title {
     position: relative;
+    margin: 0;
   }
 }
 .review {
   margin-left: 250px;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (max-width: 800px) {
   .review {
     margin: auto;
   }
@@ -441,7 +442,7 @@ p.text {
   display: flex;
   flex-direction: row;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (max-width: 800px) {
   .flex-container-two-cols {
     flex-direction: column;
   }
@@ -451,7 +452,7 @@ p.text {
   width: 50%;
   margin: 1%;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (max-width: 800px) {
   .flex-container-two-cols > div {
     width: 100%;
   }
