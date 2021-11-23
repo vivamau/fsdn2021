@@ -54,7 +54,7 @@ $(document).ready(function () {
       if (scrolled + windowPercentage > offsetTop || $win_height > offsetTop) {
         $(this).each(function (key, bar) {
           var percentage = $(this).data("percentage");
-          $(this).css("width", percentage + "%");
+          $(this).css("width", 2.5 * percentage + "%");
           ///////////////////////////////////////
           //        Animated numbers
           $(this)
@@ -139,7 +139,7 @@ function drawTimer(c, a) {
   arr = a.toString().split(".");
   intPart = arr[0];
   $("#pie_" + c + " .percent").html(
-    '<span class="int">' + intPart + "</span>" + '<span class="symbol">%</span>'
+    '<span class="int">' + intPart + "</span>" + "%"
   );
 }
 function stoppie(d, b) {

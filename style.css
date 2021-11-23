@@ -5,9 +5,9 @@
 }
 .chartBars {
   position: relative;
-  max-width: 600px;
+  max-width: 500px;
   height: 300px;
-  margin: 50px auto 50px;
+  margin: 50px auto;
 }
 .chartBars .bars {
   display: flex;
@@ -23,7 +23,7 @@
   display: inline-block;
   flex: 0 1 24%;
   height: 100%;
-  margin: 0;
+
   text-align: center;
   position: relative;
   font-size: 16px;
@@ -182,6 +182,21 @@
 .bars li .bar.purpleBarFlat {
   background-color: #6e46af;
 }
+.bars li .bar.redBar {
+  background-color: #6e1d2e;
+  background: radial-gradient(#b43651, #6e1d2e);
+}
+.bars li .bar.redBarFlat {
+  background-color: #6e1d2e;
+}
+.bars li .bar.ocraBar {
+  background-color: #b0c20d;
+  background: radial-gradient(#e2e981, #b0c20d);
+}
+.bars li .bar.ocraBarFlat {
+  background-color: #b0c20d;
+}
+
 .box-piesite {
   text-align: center;
   font-size: 22px;
@@ -331,16 +346,14 @@ li.creativity .piesite > #slice > .pie {
 body {
   max-width: 1024px;
   margin: 0 auto;
-  background: linear-gradient(
-    to bottom,
-    #14213d 40%,
-    #007dbb 60%,
-    #14213d 100%
-  );
+  background: linear-gradient(to bottom, #14213d 80%, #007dbb 100%);
   font-family: "Dosis", sans-serif;
   font-size: 1em;
   color: #ddd;
   margin: 20px;
+}
+a {
+  color: #fff;
 }
 h1,
 h2,
@@ -366,12 +379,15 @@ h2 .accent {
 h3 {
   color: rgb(238, 17, 120);
   font-size: 1.6em;
+  margin-top: 50px;
+  font-size: 2em;
 }
 strong {
   color: rgb(238, 17, 120);
 }
 p {
-  line-height: 2em;
+  line-height: 1.5em;
+  font-size: 1.3em;
 }
 
 p.cond {
@@ -382,7 +398,7 @@ p.cond {
 
 p.intro {
   font-weight: 200;
-  font-size: 2.1em;
+  font-size: 2.4em;
   line-height: 1.3em;
   padding: 0 30px 0 0;
 }
@@ -407,6 +423,6 @@ p.text {
 }
 
 .flex-container-two-cols > div {
-  width: 49%;
+  width: 50%;
   margin: 1%;
 }
