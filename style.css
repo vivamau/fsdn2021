@@ -95,6 +95,9 @@
 .chartBars2 {
   max-width: 400px;
 }
+.chartBars2-1 {
+  height: 200px !important;
+}
 .chartBars2 .bars {
   padding: 0;
 }
